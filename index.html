@@ -24,21 +24,14 @@
 <link rel=preload href=/styles/normalize.css as=style onload="this.rel='stylesheet'"><noscript><link rel=stylesheet href=/styles/normalize.css></noscript>
 <link rel=preload href=/styles/main.css as=style onload="this.rel='stylesheet'"><noscript><link rel=stylesheet href=/styles/main.css></noscript>
 <script async src=https://use.fontawesome.com/c7b1af70e2.js></script>
-    <script>
-        WebFont.load({
-            google: {
-                families: ['Rubik', 'Lora', 'Lora:700']
-            }
-
-            (function(d) {
-                var wf = d.createElement('script'),
-                    s = d.scripts[0];
-                wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
-                wf.async = true;
-                s.parentNode.insertBefore(wf, s);
-            })(document);
-        });
-    </script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+    WebFont.load({
+        google: {
+            families: ['Rubik', 'Lora', 'Lora:700']
+        }
+    });
+</script>
 <header>
     <div class=mh-logo><a href=index.html>Matt Hardwick | Front End Web Developer</a></div>
 </header>
