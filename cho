@@ -1,0 +1,77 @@
+element.style {
+}
+.js .animate-this, .js .animate-intro {
+    opacity: 0;
+}
+.home-content-tablecell h3 {
+    font-size: 1.4rem;
+}
+.home-content-tablecell h3 {
+    font-size: 1.5rem;
+}
+.home-content-tablecell h3 {
+    font-size: 1.7rem;
+}
+.home-content-tablecell h3 {
+    font-size: 1.8rem;
+}
+.home-content-tablecell h3 {
+    font-size: 2rem;
+}
+.home-content-tablecell h3 {
+    font-size: 2.1rem;
+}
+.home-content-tablecell h3 {
+    font-family: "montserrat-bold", sans-serif;
+    font-size: 2.2rem;
+    color: rgba(255, 255, 255, 0.35);
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    margin: 0 0 0 .3rem;
+}
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+h3, .h03 {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+h3, .h03, h4, .h04 {
+    margin-bottom: 1.8rem;
+}
+h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
+    font-family: "montserrat-bold", sans-serif;
+    color: #151515;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+    margin-bottom: 2.1rem;
+}
+h1, h2, h3, h4, h5, h6 {
+    -webkit-font-variant-ligatures: common-ligatures;
+    -moz-font-variant-ligatures: common-ligatures;
+    font-variant-ligatures: common-ligatures;
+    text-rendering: optimizeLegibility;
+}
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+user agent stylesheeth3 {
+    display: block;
+    font-size: 1.17em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
