@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Find a drink!</title>
+
+  <!-- bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+  crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+  <!-- CSS -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- search area and foursquare list -->
+  <div class="search-list">
+    <div class="navbar-form navbar-left">
+      <div class="form-group">
+        <!-- location -->
+        <input data-bind="value: location" class="form-control" placeholder="City, State, or Zip">
+        <!-- search keyword -->
+        <input data-bind="value: keyword" class="form-control" placeholder="Food, bars, hotels, etc.">
+        <!-- filter results -->
+        <input data-bind="value: filterResults" class="form-control" placeholder="Filter Results">
+        <button class="btn btn-primary button-control">Search</button>
+        <!-- toggle foursquare list show/hide-->
+        <button class="btn btn-info button-control" onclick="toggle('venue-list')">Hide/Show List</button>
+      </div>
+    </div>
+
+    <!-- foursquare results list-->
+    <div class="container-fluid venue-list">
+      <!-- list header -->
+      <div class="row location">
+        <h2 data-bind="text: location"></h2>
+        <h3 data-bind="text: formattedAddress"></h2>
+        </div>
+        <!-- start results -->
+        <div data-bind="foreach: filterList">
+          <div class="result">
+            <div data-bind="click: $root.markerClick">
+              <div class="details">
+                <div>
+                  <span class="list-venue-name" data-bind="text: venueName"></span>
+                  <span>-</span>
+                  <span data-bind="text: category" class="venue-category"></span>
+                  <div class="list-rate-position">
+                    <span data-bind="text: rating" class="badge rating"></span>
+                  </div>  
+                  <img class="icon" src="images/foursquare.png">
+                  </div>
+                  <div class="list-venue-address">
+                    <span data-bind="text: formattedAddress"></span>
+                  </div>
+                  <div class="list-venue-contact">
+                    <span data-bind="text: formattedPhone"></span>
+                  </div>
+                  <div class="list-venue-tips">
+                    <cite data-bind="text: tips"></cite>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div id="map"></div>
+    <script src="js/foursquare.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-3.3.0.js"></script>
+    <script async onerror="googleError()" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNwxWKENeAfuR_0ZgUFcZtPEecY13EfBw&libraries=places&callback=initViewModel"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+  
+  </body>
+</html> 

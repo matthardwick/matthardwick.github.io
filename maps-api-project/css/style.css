@@ -1,0 +1,109 @@
+﻿body {
+    margin: 0px;
+    font-family: 'Roboto Slab', serif;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.search-list {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-bottom: solid 1px;
+    border-bottom-color: #93bcff;
+}
+
+.navbar-form {
+  padding: 0 20px;
+}
+
+.form-control {
+    margin: 5px 0;
+}
+
+
+/*foursquare data list*/
+.venue-list {
+    width: 100%;
+    max-height: 500px;
+    overflow: auto; /* enables scrolling */
+    margin-top: 5px;
+    z-index: 1;
+    position: fixed;
+    bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+
+.details {
+    padding-left: 15px;
+    padding-right: 10px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: solid 1px;
+    border-bottom-color: #eae7e1;
+}
+
+.result:hover {
+    background-color: #93bcff;
+    cursor: pointer;
+}
+
+.location {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    text-align: center;
+    border-top: solid 1px;
+    border-top-color: #93bcff;
+    border-bottom: solid 1px;
+    border-bottom-color: #93bcff;
+    padding-bottom: 5px;
+}
+
+.venue-name {
+    font-size: 15px;
+}
+
+.list-venue-name {
+    font-size: 20px;
+}
+
+.list-venue-category {
+    font-size: 20px;
+}
+
+.badge {
+    background-color: #07932f;
+}
+
+.rating {
+    font-size: 15px;
+}
+
+.list-rate-position {
+    display: inline;
+    padding-left: 10px;
+}
+
+
+@media (min-width: 1350px) {
+
+  .venue-list {
+    width: 500px;
+    height: 100%;
+    max-height: 100%;
+    overflow: auto; /* enables scrolling */
+    z-index: 1;
+    position: fixed;
+    right:0;
+    border-left: solid 1px;
+    border-left-color: #93bcff;
+    background-color: rgba(255, 255, 255, 1);
+    border-right
+  }
+}
